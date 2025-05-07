@@ -2,8 +2,7 @@ import { Dialog } from "@headlessui/react";
 import { useEffect, useState } from "react";
 
 const ProductModal = ({ auth, isOpen, product, onClose, onAddToCart }) => {
-    const [quantity, setQuantity] = useState(1);
-
+    const [quantity, setQuantity] = useState(1);    
     useEffect(() => {
         if (isOpen) {
             setQuantity(1);

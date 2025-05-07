@@ -66,8 +66,6 @@ const Shopping = ({ auth }) => {
                 ];
             }
         });
-
-        console.log(cart);
     };
 
     const handleDeleteItems = (id) => {
@@ -135,7 +133,7 @@ const Shopping = ({ auth }) => {
 
             {/* Modal de producto */}
             <ProductModal
-                auth={true} // Cambiar a `auth` verdadero o falso según si el usuario está autenticado
+                auth={auth} // Cambiar a `auth` verdadero o falso según si el usuario está autenticado
                 isOpen={isOpen}
                 product={selectedProduct}
                 onClose={closeModal}
